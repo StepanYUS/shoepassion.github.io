@@ -1,0 +1,61 @@
+body {
+	background-color: ;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2vw;
+}
+
+.listCards {
+	display: grid;
+	grid-template-columns: 40vw 40vw;
+	grid-gap: 1vw;
+	margin-bottom: 2vw;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1vw;
+	border: 1px black solid;
+	border-radius: 1vw;
+	font-size: 1.5vw;
+}
+
+img {
+	width: 35vw;
+}
+
+.cardButton {
+	background-color: #fff;
+	border: 1px black solid;
+	border-radius: 3px;
+	font-size: 1vw;
+	padding: 0.4vw;
+	transition: 0.05s linear;
+}
+
+.cardButton:hover {
+	scale: 1.04;
+}
+
+.cardButton:active {
+	scale: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.cardButton:hover {
+		scale: 1;
+	}
+
+	.cardButton:active {
+		scale: 0.9;
+	}
+}
