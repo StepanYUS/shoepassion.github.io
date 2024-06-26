@@ -13,55 +13,181 @@
             <div class="card">
                 <img src="img/NIKE Air Zoom Pegasus.jpeg" alt="">
                 <p>NIKE Air Zoom Pegasus</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton1">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/NIKE Air Monarch IV.jpeg" alt="">
                 <p>NIKE Air Monarch IV</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton2">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/PUMA Wired Run Pure.jpeg" alt="">
                 <p>PUMA Wired Run Pure</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton3">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/ASICS Gel-Sonoma 7.jpeg" alt="">
                 <p>ASICS Gel-Sonoma 7</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton4">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/Nike Defy All Day.jpeg" alt="">
                 <p>Nike Defy All Day</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton5">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/New balance NB574.jpeg" alt="">
                 <p>New balance NB574</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton6">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/Adidas Forum Bold.jpeg" alt="">
                 <p>Adidas Forum Bold</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton7">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/Adidas Forum Low.jpeg" alt="">
                 <p>Adidas Forum Low</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton8">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/Adidas Ozweego.jpeg" alt="">
                 <p>Adidas Ozweego</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton9">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="img/ASICS GT-1000 12.jpeg" alt="">
                 <p>ASICS GT-1000 12</p>
-                <button class="cardButton">Добавить в корзину</button>
+                <button class="cardButton" id="cardButton10">Добавить в корзину</button>
             </div>
         </div>
         <div class="usercard" id="usercard"></div>
     </main>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="text/javascript">
+        let tg = window.Telegram.WebApp;
+
+        tg = expend();
+
+        tg.MainButton.textColor="fff";
+        tg.MainButton.color="#2cab37"
+
+        let item = "";
+
+        let cardButton1 = document.getElementById("cardButton1");
+        let cardButton2 = document.getElementById("cardButton2");
+        let cardButton3 = document.getElementById("cardButton3");
+        let cardButton4 = document.getElementById("cardButton4");
+        let cardButton5 = document.getElementById("cardButton5");
+        let cardButton6 = document.getElementById("cardButton6");
+        let cardButton7 = document.getElementById("cardButton7");
+        let cardButton8 = document.getElementById("cardButton8");
+        let cardButton9 = document.getElementById("cardButton9");
+        let cardButton10 = document.getElementById("cardButton10");
+
+        cardButton1.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 1!");
+                item="1";
+                tg.MainButton.show();
+            }
+        });
+        cardButton2.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 2!");
+                item="2";
+                tg.MainButton.show();
+            }
+        });
+        cardButton3.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 3!");
+                item="3";
+                tg.MainButton.show();
+            }
+        });
+        cardButton4.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 4!");
+                item="4";
+                tg.MainButton.show();
+            }
+        });
+        cardButton5.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 5!");
+                item="5";
+                tg.MainButton.show();
+            }
+        });
+        cardButton6.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 6!");
+                item="6";
+                tg.MainButton.show();
+            }
+        });
+        cardButton7.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 7!");
+                item="7";
+                tg.MainButton.show();
+            }
+        });
+        cardButton8.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 8!");
+                item="8";
+                tg.MainButton.show();
+            }
+        });
+        cardButton9.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 9!");
+                item="9";
+                tg.MainButton.show();
+            }
+        });
+        cardButton10.addEventListener("click", function(){
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide();
+            }
+            else {
+                tg.MainButton.setText("Вы выбрали товар 10!");
+                item="10";
+                tg.MainButton.show();
+            }
+        });
+
+        Telegram.WebApp.onEvent("mainButtonClicked", function(){
+            tg.sendData(item);
+        });
+    </script>
 </body>
